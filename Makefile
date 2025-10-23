@@ -1,8 +1,9 @@
 
 load:
 	cat load.list | python3 gen "module load " > l1
-	cat l1 prl > load
-	rm l1
+	bash prl > l2
+	cat l1 l2 > load
+	rm l1 l2
 
 find.list:
 	cat replace.list | python3 gen "/usr/bin/" > find.list
