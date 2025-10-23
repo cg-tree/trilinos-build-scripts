@@ -1,0 +1,5 @@
+cat replace.list | python3 gen /usr/bin/ > p1
+cat replace.list | python3 gen "which " | bash > p2
+python3 zip p1 p2 | xargs python3 findreplace > p3
+bash p3
+grep -rl 'mpiexec\" \"-np\"' ../build | xargs sed -i "s/mpiexec\" \"-np\"/mpiexec\" \"--oversubscribe\" \"-n\"/g"

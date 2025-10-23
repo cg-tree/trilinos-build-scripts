@@ -1,0 +1,8 @@
+import sys
+l1 = []
+l2 = []
+with open(sys.argv[1]) as f:
+  l1 = [l for l in f.readlines()]
+with open(sys.argv[2]) as f:
+  l2 = [l for l in f.readlines()]
+[print(f"{x[0].strip()} {x[1]}") for x in list(zip(l1,l2) ) ]

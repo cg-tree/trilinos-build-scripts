@@ -1,0 +1,10 @@
+import sys
+def esc(p):
+  return "\/".join(p.split("/") )
+
+badpath = sys.argv[1]
+goodpath = sys.argv[2]
+search = esc(badpath)
+replace = esc(goodpath)
+command = f'grep -rl /usr/bin/cmake ../build/ | xargs sed -i "s/{search}/{replace}/g"'
+print(command)

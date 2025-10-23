@@ -1,0 +1,9 @@
+when using sbatch scripts
+
+
+sbatch script1
+  bash script2
+    module load
+  bash script3
+
+module load in script2 may fail
