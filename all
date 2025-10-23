@@ -1,3 +1,5 @@
 srun make which.list
 srun make mkedit
-
+srun make s_setup
+srun make s_make
+srun make s_test
