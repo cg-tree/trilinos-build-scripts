@@ -1,4 +1,3 @@
-cat load conf mkedit | bash
-cd ../build 
-make -j 4
-make test
+srun make which.list
+srun make mkedit
+

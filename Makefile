@@ -9,10 +9,10 @@ find.list:
 
 which.list: load
 	cat replace.list | python3 gen "which " > w1
-	cat load w1 | srun bash > which.list
+	cat load w1 | bash > which.list
 	rm w1
 
-mkedit: find.list which.list
+mkedit: find.list
 	python3 zip find.list which.list | python3 gen "python3 findreplace "| bash > p3
 	cat p3 mpi.sed > mkedit
 	rm p3
