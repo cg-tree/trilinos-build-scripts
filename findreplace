@@ -1,6 +1,6 @@
 import sys
 def esc(p):
-  return "\/".join(p.split("/") )
+  return r"\/".join(p.split("/") )
 
 badpath = sys.argv[1]
 goodpath = sys.argv[2]

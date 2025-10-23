@@ -1,2 +1,0 @@
-cat load.list | python3 gen "module load " | bash
-bash prl
