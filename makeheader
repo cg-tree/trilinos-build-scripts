@@ -4,7 +4,7 @@
 #SBATCH --ntasks 4
 #SBATCH --output output.txt
 #SBATCH --error error
-#SBATCH --time 01:00:00
+#SBATCH --time 02:00:00
 #SBATCH --job-name TrilinosMake
 #SBATCH --mail-user your_username@unm.edu
 #SBATCH --mail-type ALL
