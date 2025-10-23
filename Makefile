@@ -8,8 +8,8 @@ find.list:
 	cat replace.list | python3 gen "/usr/bin/" > find.list
 
 which.list: load
-	bash load
-	cat replace.list | python3 gen "which " | bash > which.list
+	cat replace.list | python3 gen "which " > w1
+	cat load w1 | bash > which.list
 
 mkedit: find.list which.list
 	python3 zip find.list which.list | python3 gen "python3 findreplace "| bash > p3
