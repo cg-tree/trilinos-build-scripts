@@ -2,6 +2,7 @@
 
 #SBATCH --partition debug
 #SBATCH --ntasks 1
+#SBATCH --mem 8G
 #SBATCH --output output.txt
 #SBATCH --error error
 #SBATCH --time 00:20:00
