@@ -1,2 +1,2 @@
 cd ../build 
-srun make -j 4
+srun make -j 8

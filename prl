@@ -1,3 +1,1 @@
-#conda init bash
-#conda activate myperl
 perl -e "print join(\":\", @INC);" | python3 gen "export PER5LIB="

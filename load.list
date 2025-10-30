@@ -2,4 +2,3 @@ cmake
 git
 openmpi
 openblas
-miniconda3
