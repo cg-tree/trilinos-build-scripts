@@ -32,3 +32,6 @@ s_make: load
 s_test: load
 	cat testheader load maketest > s_test
 	#sbatch s_test
+
+clean:
+	rm conf load find.list which.list mkedit s_setup s_make s_test
