@@ -1,4 +1,4 @@
 cmake
 git
 openmpi
-openblas
+openblas/0.3.30-cpqn
