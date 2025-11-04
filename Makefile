@@ -1,4 +1,7 @@
 
+conf:
+	cat $$target > conf
+
 load:
 	cat load.list | python3 gen "module load " > l1
 	bash prl > l2
@@ -13,7 +16,7 @@ which.list: load
 	cat load w1 | bash > which.list
 	rm w1
 
-mkedit: find.list
+mkedit: find.list which.list
 	python3 zip find.list which.list | python3 gen "python3 findreplace "| bash > p3
 	cat p3 mpi.sed > mkedit
 	rm p3
